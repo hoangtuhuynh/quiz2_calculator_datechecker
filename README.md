@@ -62,4 +62,12 @@ Each behavior was built in a Red → Green → Refactor cycle, visible in the co
 
 ## Reflection
 
-<!-- Write your own reflection here -->
+Before this quiz, I usually just wrote the code straight through. I did not test each method
+when I finished it, and I had never used unit tests. At first, writing the test first felt a
+little time-consuming. But I was surprised by how much it helped. When there was an error, the
+tests showed me which parts were correct. I did not have to look back through the whole program
+to find the problem.
+
+I made February return false because it is a fact that February never has 31 days. It only has
+28 or 29 days. When I refactored the code, the tests made me feel safe. If something broke, the
+tests would tell me right away. I would use TDD again.
