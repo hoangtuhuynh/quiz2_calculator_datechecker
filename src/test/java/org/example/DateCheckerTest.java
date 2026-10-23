@@ -12,3 +12,4 @@ class DateCheckerTest {
         assertTrue(dateChecker.has31Days(Month.JANUARY), "JANUARY should have 31 days");
     }
 }
+$$
