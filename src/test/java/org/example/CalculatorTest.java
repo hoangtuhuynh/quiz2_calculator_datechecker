@@ -25,4 +25,16 @@ class CalculatorTest {
         assertEquals(4, calculator.sum(4, 0));
         assertEquals(0, calculator.sum(0, 0));
     }
+
+    @Test
+    void subtractSmallerFromLarger() {
+        Calculator calculator = new Calculator();
+        assertEquals(6, calculator.subtract(10, 4));
+    }
+
+    @Test
+    void subtractLargerFromSmallerGivesNegative() {
+        Calculator calculator = new Calculator();
+        assertEquals(-6, calculator.subtract(4, 10));
+    }
 }
