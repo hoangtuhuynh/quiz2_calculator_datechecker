@@ -37,4 +37,24 @@ class CalculatorTest {
         Calculator calculator = new Calculator();
         assertEquals(-6, calculator.subtract(4, 10));
     }
+
+    @Test
+    void multiplyTwoPositiveNumbers() {
+        Calculator calculator = new Calculator();
+        assertEquals(12, calculator.multiply(3, 4));
+    }
+
+    @Test
+    void multiplyByZeroGivesZero() {
+        Calculator calculator = new Calculator();
+        assertEquals(0, calculator.multiply(7, 0));
+        assertEquals(0, calculator.multiply(0, -5));
+    }
+
+    @Test
+    void multiplyWithNegativeNumbers() {
+        Calculator calculator = new Calculator();
+        assertEquals(-15, calculator.multiply(-3, 5));
+        assertEquals(15, calculator.multiply(-3, -5));
+    }
 }
